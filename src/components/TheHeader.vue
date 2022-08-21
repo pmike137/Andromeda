@@ -7,7 +7,7 @@
         <a href="https://flowbite.com" class="flex items-center">
           <img
             src="image/logo.svg"
-            class="mr-3 h-6 sm:h-9"
+            class="mr-3 h-6 md:h-9"
             alt="Flowbite Logo"
           />
         </a>
