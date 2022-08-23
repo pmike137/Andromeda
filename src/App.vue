@@ -1,10 +1,10 @@
 <template>
-  <div class="min-h-screen flex-col justify-between">
+  <div class="min-h-screen relative">
     <TheHeader />
     <main
-      class="flex min-h-[100vh] w-full flex-col bg-[url('image/background_base.jpg')] bg-cover"
+      class="flex min-h-[100vh] w-full bg-[url('image/background_base.jpg')] bg-cover"
     >
-      <RouterView />
+      <div class="container pt-24 pb-10"><RouterView /></div>
     </main>
     <TheFooter />
   </div>

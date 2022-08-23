@@ -1,6 +1,6 @@
 <template>
-  <div class="max-h-1/4 mt-[150px] w-full flex justify-center items-center">
-    <div class="h-[250px] min-w-[70%] flex justify-between items-center">
+  <div class="">
+    <div class="flex justify-around items-center">
       <div
         class="w-[250px] h-[250px] rounded-lg overflow-hidden border border-black"
       >
@@ -51,7 +51,7 @@
   <div>
     <hr class="my-8 h-px bg-gray-800 border-0 dark:bg-gray-700" />
   </div>
-  <div class="max-h-1/4 mt-[80px] w-full flex justify-center items-center">
+  <div class="flex justify-around items-center">
     <div
       class="flex justify-center items-center mr-[30px] w-[150px] min-w-[150px] h-[150px] border border-slate-300 shadow-md rounded-lg bg-slate-300 opacity-70 hover:bg-slate-400"
     >
@@ -104,7 +104,7 @@
       </div>
     </div>
     <div
-      class="flex justify-center items-center mr-[30px] w-[150px] min-w-[150px] h-[150px] border border-slate-300 shadow-md rounded-lg bg-slate-300 opacity-70 hover:bg-slate-400"
+      class="flex justify-center items-center w-[150px] min-w-[150px] h-[150px] border border-slate-300 shadow-md rounded-lg bg-slate-300 opacity-70 hover:bg-slate-400"
     >
       <div class="flex-col items-center justify-center text-center">
         <h5 class="mb-2 text-xl font-bold text-black text-opacity-1">
