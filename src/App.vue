@@ -4,7 +4,7 @@
     <main
       class="flex min-h-[100vh] w-full bg-[url('image/background_base.jpg')] bg-cover"
     >
-      <div class="container pt-24 pb-10"><RouterView /></div>
+      <div class="container pt-28 pb-10"><RouterView /></div>
     </main>
     <TheFooter />
   </div>

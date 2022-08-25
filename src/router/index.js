@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import LoginView from "../views/LoginView.vue";
 import ComingView from "../views/ComingView.vue";
 import ConsumptionView from "../views/ConsumptionView.vue";
+import StockView from "../views/StockView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: "/consumption",
       name: "consumption",
       component: ConsumptionView,
+    },
+    {
+      path: "/stock",
+      name: "stock",
+      component: StockView,
     },
     // {
     //   path: "/about",

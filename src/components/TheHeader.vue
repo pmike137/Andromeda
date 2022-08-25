@@ -7,7 +7,7 @@
         <router-link class="flex items-center" to="/">
           <img
             src="image/logo.svg"
-            class="mr-3 h-6 md:h-9"
+            class="mr-3 h-8 md:h-12"
             alt="Flowbite Logo"
           />
         </router-link>
