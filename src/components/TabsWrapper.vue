@@ -8,12 +8,12 @@
         :key="title"
         :class="{ 'active-tab': title == selectedTitle }"
         @click="selectedTitle = title"
-        class="w-24 inline-block py-3 px-4 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white mr-2 last:mr-0 mb-3 cursor-pointer"
+        class="w-24 inline-block py-3 px-4 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white mr-2 last:mr-0 mb-3 cursor-pointer select-none"
       >
         {{ title }}
       </li>
     </ul>
-    <div class="flex justify-end">
+    <div class="flex justify-center">
       <input
         type="text"
         class="w-24 h-5 border border-gray-300 text-gray-900 text-sm text-center opacity-50 mb-3 rounded-lg"

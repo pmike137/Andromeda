@@ -6,8 +6,12 @@
       >
         <img src="image/bk-metal.jpg" class="h-12 w-full opacity-1" />
         <div
-          class="h-full flex-col border border-red-800 shadow-md rounded-b-lg bg-red-500 opacity-80 hover:bg-red-600"
+          class="h-full flex-col border border-red-800 shadow-md rounded-b-lg bg-red-500 opacity-80 hover:bg-red-600 relative"
         >
+          <router-link
+            to="/coming"
+            class="absolute w-full h-full t-0 l-0"
+          ></router-link>
           <h5 class="mt-7 mb-2 text-2xl font-bold text-black text-center">
             Приход
           </h5>
@@ -21,10 +25,14 @@
       >
         <img src="image/bk-metal.jpg" class="h-12 w-full opacity-1" />
         <div
-          class="h-full flex-col border border-red-800 shadow-md rounded-b-lg bg-red-500 opacity-80 hover:bg-red-600"
+          class="h-full flex-col border border-red-800 shadow-md rounded-b-lg bg-red-500 opacity-80 hover:bg-red-600 relative"
         >
+          <router-link
+            to="/consumption"
+            class="absolute w-full h-full t-0 l-0"
+          ></router-link>
           <h5 class="mt-7 mb-2 text-2xl font-bold text-black text-center">
-            Расход
+            Сделка
           </h5>
           <div class="flex justify-center items-center">
             <img src="image/icon-order.png" class="h-25" />

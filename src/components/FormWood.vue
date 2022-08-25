@@ -11,25 +11,8 @@
           <option>Буларусь</option>
         </select>
       </div>
-      <div class="flex justify-end z-0 mb-6 w-full group"></div>
-      <div class="flex justify-between z-0 mb-6 w-full group">
-        <label for="amount" class="block w-24 mb-1 sm:text-xs text-center"
-          >Кол-во</label
-        >
-        <input
-          type="text"
-          id="amount"
-          class="block p-2 w-1/4 sm:text-xs rounded-lg border-none focus:border focus:border-red-500"
-        />
-        <select name="" id="" class="w-24 h-9 rounded-lg border text-end">
-          <option>+</option>
-          <option>-</option>
-        </select>
-        <input
-          type="text"
-          id="amount"
-          class="block p-2 w-1/4 sm:text-xs rounded-lg border-none"
-        />
+      <div class="relative z-0 mb-6 w-full group">
+        <InputTable />
       </div>
       <div class="flex justify-end z-0 mb-6 w-full group">
         <button
@@ -52,24 +35,16 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-between z-0 mb-6 w-full group">
-        <label for="price-unit" class="block w-24 mb-1 sm:text-xs text-center"
+      <div class="flex justify-end z-0 mb-6 w-full group">
+        <label
+          for="price-unit"
+          class="flex justify-center items-center w-24 sm:text-xs text-center"
           >Цена за ед.</label
         >
         <input
           type="text"
           id="price"
           class="block p-2 w-1/4 h-9 sm:text-xs rounded-lg border-none focus:border focus:border-red-500"
-        />
-        <label
-          for="price-logistics"
-          class="block w-24 mb-1 sm:text-xs text-center"
-          >Цена за ед.</label
-        >
-        <input
-          type="text"
-          id="price-logistics"
-          class="block p-2 w-1/4 h-9 sm:text-xs rounded-lg border-none"
         />
       </div>
       <div class="flex justify-end z-0 mb-6 w-full group">
@@ -104,3 +79,6 @@
     </form>
   </div>
 </template>
+<script setup>
+import InputTable from "./InputTable.vue";
+</script>

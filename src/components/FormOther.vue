@@ -9,7 +9,9 @@
         ></textarea>
       </div>
       <div class="flex justify-end z-0 mb-6 w-full group">
-        <label for="amount" class="block w-24 mb-1 sm:text-xs text-center"
+        <label
+          for="amount"
+          class="flex justify-center items-center w-24 sm:text-xs text-center"
           >Кол-во</label
         >
         <input
@@ -20,7 +22,9 @@
       </div>
 
       <div class="flex justify-between z-0 mb-6 w-full group">
-        <label for="price-unit" class="block w-24 mb-1 sm:text-xs text-center"
+        <label
+          for="price-unit"
+          class="flex justify-center items-center w-24 sm:text-xs text-center"
           >Цена за ед.</label
         >
         <input
@@ -30,7 +34,7 @@
         />
         <label
           for="price-logistics"
-          class="block w-24 mb-1 sm:text-xs text-center"
+          class="flex justify-center items-center w-24 sm:text-xs text-center"
           >Цена за ед.</label
         >
         <input
