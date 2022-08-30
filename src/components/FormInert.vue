@@ -51,14 +51,18 @@
         />
       </div>
       <div class="flex justify-end z-0 mb-6 w-full group">
-        <button
-          id="select-conveyor"
-          data-dropdown-toggle="dropdownSearch"
-          class="bg-red-200 rounded-lg text-black w-1/2 h-9 hover:bg-red-500"
-          type="button"
-        >
-          Выбор перевозчиков
-        </button>
+        <VueMultiselect
+          v-model="value"
+          :options="customoptions"
+          :multiple="true"
+          :close-on-select="true"
+          :clear-on-select="false"
+          :preserve-search="true"
+          placeholder="Pick some"
+          label="name"
+          track-by="name"
+          :preselect-first="false"
+        />
         <div id="dropdownSearch" class="hidden z-10 bg-white rounded shadow">
           <div p-3>
             <div class="relative">
@@ -128,4 +132,40 @@
 
 <script setup>
 import NumOfOrder from "../components/NumOfOrder.vue";
+import VueMultiselect from "vue-multiselect";
+import { ref } from "vue";
+
+const customselected = ref(null);
+const customoptions = ref([
+  { name: "Зия", car: "Зил" },
+  { name: "Сервер", car: "Зил" },
+  { name: "Решат", car: "Зил" },
+]);
+
+// export default {
+//   props: {
+//     drivers: {
+//       type: Array,
+//       default: () => [],
+//     },
+//   },
+//   components: {
+//     Multiselect,
+//   },
+//   data() {
+//     return {
+//       drivers_name: "",
+//     };
+//   },
+//   methods: {
+//     onSearchDrivers_name() {
+//       console.log("onSearchDrivers_name");
+//     },
+//     onSlecetedDrivers() {
+//       console.log("onSlecetedDrivers");
+//     },
+//   },
+// };
 </script>
+
+<style src="vue-multiselect/dist/vue-multiselect.css"></style>
