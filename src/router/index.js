@@ -2,8 +2,12 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import LoginView from "../views/LoginView.vue";
 import ComingView from "../views/ComingView.vue";
-import ConsumptionView from "../views/ConsumptionView.vue";
-import StockView from "../views/StockView.vue"
+import ConsumptionView from "../views/OrderView.vue";
+import StockView from "../views/StockView.vue";
+import PriceEditView from "../views/PriceEditView.vue";
+import PackView from "../views/PackView.vue";
+import DBView from "../views/DBView.vue";
+import FinanceView from "../views/FinanceView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,14 +28,34 @@ const router = createRouter({
       component: ComingView,
     },
     {
-      path: "/consumption",
-      name: "consumption",
+      path: "/order",
+      name: "order",
       component: ConsumptionView,
     },
     {
       path: "/stock",
       name: "stock",
       component: StockView,
+    },
+    {
+      path: "/priceedit",
+      name: "priceedit",
+      component: PriceEditView,
+    },
+    {
+      path: "/pack",
+      name: "pack",
+      component: PackView,
+    },
+    {
+      path: "/databases",
+      name: "databases",
+      component: DBView,
+    },
+    {
+      path: "/finance",
+      name: "finance",
+      component: FinanceView,
     },
     // {
     //   path: "/about",

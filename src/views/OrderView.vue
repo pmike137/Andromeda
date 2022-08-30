@@ -1,3 +1,4 @@
+§
 <template>
   <div class="flex justify-center">
     <div class="w-[60%] max-h-screen bg-slate-300 p-5 rounded-lg">

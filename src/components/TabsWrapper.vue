@@ -14,14 +14,6 @@
         ><component v-if="item.icon" :is="item.icon" class="ml-2" />
       </li>
     </ul>
-    <div class="flex justify-center">
-      <input
-        type="text"
-        class="w-24 h-5 border border-gray-300 text-gray-900 text-sm text-center opacity-50 mb-3 rounded-lg"
-        value="#123"
-        disabled
-      />
-    </div>
     <slot />
   </div>
 </template>
@@ -42,7 +34,6 @@ const headerItems = new Array(tabTitles.value.length)
     };
   });
 const selectedTitle = ref(tabTitles.value[0]);
-console.log(headerItems);
 
 provide("selectedTitle", selectedTitle);
 </script>

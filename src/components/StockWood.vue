@@ -1,9 +1,9 @@
 <template>
   <div
-    class="overflow-x-auto relative shadow-md sm:rounded-lg rounded-lg bg-slate-400 p-1"
+    class="overflow-x-auto relative shadow-md sm:rounded-lg rounded-lg bg-slate-400 p-0"
   >
     <div
-      class="flex justify-center items-center pb-4 bg-slate-400 dark:bg-gray-900"
+      class="flex justify-center items-center p-4 bg-slate-400 dark:bg-gray-900"
     >
       <label for="table-search" class="sr-only">Search</label>
       <div class="relative mt-1">
@@ -28,7 +28,7 @@
           type="text"
           id="table-search"
           class="block p-2 pl-10 w-80 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          placeholder="Search for items"
+          placeholder="Поиск товара"
         />
       </div>
     </div>
