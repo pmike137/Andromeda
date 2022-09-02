@@ -37,28 +37,36 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="border-b-[1px] border-slate-400 rounded-x-md">
+          <tr
+            class="border-b-[1px] border-slate-400 rounded-x-md hover:bg-slate-400 hover:bg-opacity-50 cursor-pointer"
+          >
             <th class="py-3 px-6 text-sm font-normal">
               Щебень Белогорский 10-20
             </th>
             <th class="py-3 px-6 text-sm text-right font-normal">100</th>
             <th class="py-3 px-6 text-sm text-right font-normal">2000,00</th>
           </tr>
-          <tr class="border-b-[1px] border-slate-400 rounded-x-md">
+          <tr
+            class="border-b-[1px] border-slate-400 rounded-x-md hover:bg-slate-400 hover:bg-opacity-50 cursor-pointer"
+          >
             <th class="py-3 px-6 text-sm font-normal">
               Щебень Белогорский 10-20
             </th>
             <th class="py-3 px-6 text-sm text-right font-normal">100</th>
             <th class="py-3 px-6 text-sm text-right font-normal">2000,00</th>
           </tr>
-          <tr class="border-b-[1px] border-slate-400 rounded-x-md">
+          <tr
+            class="border-b-[1px] border-slate-400 rounded-x-md hover:bg-slate-400 hover:bg-opacity-50 cursor-pointer"
+          >
             <th class="py-3 px-6 text-sm font-normal">
               Щебень Белогорский 10-20
             </th>
             <th class="py-3 px-6 text-sm text-right font-normal">100</th>
             <th class="py-3 px-6 text-sm text-right font-normal">2000,00</th>
           </tr>
-          <tr class="border-b-[1px] border-slate-400 rounded-x-md">
+          <tr
+            class="border-b-[1px] border-slate-400 rounded-x-md hover:bg-slate-400 hover:bg-opacity-50 cursor-pointer"
+          >
             <th class="py-3 px-6 text-sm font-normal">
               Щебень Белогорский 10-20
             </th>

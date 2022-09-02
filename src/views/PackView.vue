@@ -26,9 +26,11 @@
       </div>
       <div class="h-1/5 flex justify-center items-center">
         <input
+          v-model="valueOfWeight"
           type="text"
+          placeholder=""
+          oninput="this.value = this.value.replace(/[^0-9]/g,'')"
           class="border-1 bg-slate-100 text-black rounded-lg mr-6 focus:ring-red-500 focus:border-red-500"
-          placeholder="Кол-во мешков"
         />
 
         <svg
@@ -46,7 +48,7 @@
         <input
           type="text"
           class="border-0 bg-slate-200 text-gray-700 rounded-lg ml-6"
-          placeholder="0,8 тонн"
+          :placeholder="`${valueOfWeight / 25} тонн`"
           disabled
         />
       </div>
@@ -61,5 +63,10 @@
     </form>
   </div>
 </template>
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+const valueOfWeight = ref("");
+console.log(valueOfWeight.value);
+</script>
+
 <style scoped></style>
