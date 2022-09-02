@@ -21,5 +21,4 @@ import FormOther from "../components/FormOther.vue";
 import Stone from "../components/icons/IconStone.vue";
 import Wood from "../components/icons/IconWood.vue";
 import Unit from "../components/icons/IconUnit.vue";
-import Other from "../components/icons/IconOther.vue";
 </script>

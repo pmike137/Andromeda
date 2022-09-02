@@ -29,6 +29,10 @@
           >Цена за ед.</label
         >
         <input
+          v-model="refreshValue"
+          :type="indicatorChange ? 'number' : 'text'"
+          @focus="indicatorChange = true"
+          @blur="indicatorChange = false"
           type="text"
           id="price"
           class="block p-2 w-1/4 h-9 sm:text-xs rounded-lg border-none focus:border focus:border-red-500 focus:ring-red-500"
@@ -36,12 +40,13 @@
         <label
           for="price-logistics"
           class="flex justify-center items-center w-24 sm:text-xs text-center"
-          >Цена за ед.</label
+          >Сто-ть</label
         >
         <input
           type="text"
           id="price-logistics"
           class="block p-2 w-1/4 h-9 sm:text-xs rounded-lg border-none focus:ring-red-500"
+          disabled
         />
       </div>
       <div class="flex justify-end z-0 mb-6 w-full group">
@@ -79,4 +84,22 @@
 
 <script setup>
 import NumOfOrder from "../components/NumOfOrder.vue";
+import { ref } from "vue";
+import { computed } from "@vue/reactivity";
+
+const valueOfPrice = ref("");
+const indicatorChange = false;
+const refreshValue = computed({
+  get() {
+    return this.indicatorChange
+      ? this.valueOfPrice
+      : this.valueOfPrice.toLocaleString();
+  },
+  set(value) {
+    this.valueOfPrice = +value.replace(/\s/g, "");
+    this.$emit("input", this.valueOfPrice);
+  },
+});
+
+console.log(valueOfPrice.value);
 </script>
