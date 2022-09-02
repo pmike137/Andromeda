@@ -1,10 +1,9 @@
 <template>
-  <div class="Modal">
-    <div class="relative z-50">
+  <div class="bg-slate-500 bg-opacity-50">
+    <div class="relative">
       <div
-        id="popup-modal"
         tabindex="-1"
-        class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full justify-center items-center flex"
+        class="bg-slate-800 bg-opacity-50 overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full justify-center items-center flex"
         aria-modal="true"
         role="dialog"
       >
@@ -62,6 +61,7 @@
                 Да
               </button>
               <button
+                @click="ToggleModal()"
                 data-modal-toggle="popup-modal"
                 type="button"
                 class="w-[100px] text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
@@ -75,5 +75,7 @@
     </div>
   </div>
 </template>
-<script setup></script>
+<script setup>
+defineProps("ToggleModal");
+</script>
 <style scoped></style>

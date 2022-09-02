@@ -225,16 +225,29 @@
     </button>
     <div class="openModal">
       <button
+        @click="() => ToggleModal('buttonTrigger')"
         class="mr-7 px-6 py-3 bg-red-300 hover:bg-red-500 border-0 rounded-lg"
       >
         Утвердить
       </button>
     </div>
+    <AcceptModal
+      v-if="modalTriggers.buttonTrigger"
+      :ToggleModal="() => ToggleModal('buttonTrigger')"
+    />
   </div>
-  <AcceptModal />
 </template>
 <script setup>
+import { ref } from "vue";
 import AcceptModal from "../components/AcceptModal.vue";
+
+const modalTriggers = ref({
+  buttonTrigger: false,
+});
+
+const ToggleModal = (trigger) => {
+  modalTriggers.value[trigger] = !modalTriggers.value[trigger];
+};
 </script>
 
 <style scoped></style>

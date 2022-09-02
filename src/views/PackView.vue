@@ -66,7 +66,6 @@
 <script setup>
 import { ref } from "vue";
 const valueOfWeight = ref("");
-console.log(valueOfWeight.value);
 </script>
 
 <style scoped></style>
