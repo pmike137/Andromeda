@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center">
-    <div class="w-[60%] max-h-screen bg-slate-300 p-5 rounded-lg">
+    <div class="w-[60%] bg-slate-300 p-5 rounded-lg">
       <TabsWrapper>
         <Tab title="Инерт" :icon="Stone"> <StockInert /></Tab>
         <Tab title="Лес" :icon="Wood"><StockWood /></Tab>

@@ -1,7 +1,7 @@
 <template>
   <div class="container flex justify-center">
     <div
-      class="bg-gray-300 p-4 rounded-lg shadow-md sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 min-w-[500px]"
+      class="bg-slate-300 p-4 rounded-lg shadow-md sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 min-w-[500px]"
     >
       <form class="space-y-6" action="#">
         <h5 class="text-xl font-medium text-gray-900 dark:text-white">
@@ -57,18 +57,20 @@
             >Забыли пароль?</a
           >
         </div>
-        <button
+        <!-- <button
           type="submit"
           class="w-full text-white bg-red-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
           Войти
-        </button>
-        <!-- <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
-              Not registered?
-              <a href="#" class="text-blue-700 hover:underline dark:text-blue-500"
-                >Create account</a
-              >
-            </div> -->
+        </button> -->
+        <router-link
+          to="/"
+          type="submit"
+          class="w-full text-white bg-red-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Войти
+        </router-link>
+        <!-- <router-link to="/" class="w-full h-full t-0 l-0"></router-link> -->
       </form>
     </div>
   </div>

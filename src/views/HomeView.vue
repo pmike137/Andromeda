@@ -118,10 +118,6 @@
     <div
       class="flex justify-center items-center w-[150px] min-w-[150px] h-[150px] border border-slate-300 shadow-md rounded-lg bg-slate-300 relative"
     >
-      <!-- <router-link
-        to="/finance"
-        class="absolute w-full h-full t-0 l-0"
-      ></router-link> -->
       <div class="flex-col items-center justify-center text-center">
         <h5 class="mb-2 text-xl font-bold text-black text-opacity-50">
           Финансы

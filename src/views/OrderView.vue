@@ -1,7 +1,7 @@
 §
 <template>
   <div class="flex justify-center">
-    <div class="w-[60%] max-h-screen bg-slate-300 p-5 rounded-lg">
+    <div class="w-[60%] bg-slate-300 p-5 rounded-lg">
       <TabsWrapper>
         <Tab title="Сделка"> <OrderSell /></Tab>
         <Tab title="Другое"></Tab>

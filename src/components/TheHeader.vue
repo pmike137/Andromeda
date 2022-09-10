@@ -11,16 +11,23 @@
             alt="Flowbite Logo"
           />
         </router-link>
+
         <div class="flex items-center">
+          <IconManager />
           <a
             href="#"
             class="text-sm font-medium text-red-600 dark:text-red-500 hover:underline"
-            >Регистрация</a
           >
+            Иванов И.И.</a
+          >
+          <IconLogOut />
         </div>
       </div>
     </nav>
   </header>
 </template>
-<script setup></script>
+<script setup>
+import IconManager from "../components/icons/IconManager.vue";
+import IconLogOut from "../components/icons/IconLogOut.vue";
+</script>
 <style scoped></style>
