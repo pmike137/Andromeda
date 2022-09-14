@@ -5,7 +5,25 @@
       <div class="flex justify-between z-0 mb-6 w-full group">
         <select
           id="name-of-position"
-          class="w-[70%] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-l-lg border-l-gray-100 dark:border-l-gray-700 border-l-2 focus:ring-red-500 focus:border-red-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          class="
+            w-[70%]
+            bg-gray-50
+            border border-gray-300
+            text-gray-900 text-sm
+            rounded-l-lg
+            border-l-gray-100
+            dark:border-l-gray-700
+            border-l-2
+            focus:ring-red-500 focus:border-red-500
+            block
+            p-2.5
+            dark:bg-gray-700
+            dark:border-gray-600
+            dark:placeholder-gray-400
+            dark:text-white
+            dark:focus:ring-blue-500
+            dark:focus:border-blue-500
+          "
         >
           <option selected>Выберите товар...</option>
           <option>Щебень Белогорский</option>
@@ -17,7 +35,25 @@
         </select>
         <select
           id="size-of-position"
-          class="w-[25%] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-r-lg border-l-gray-100 dark:border-l-gray-700 border-l-2 focus:ring-red-500 focus:border-red-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          class="
+            w-[25%]
+            bg-gray-50
+            border border-gray-300
+            text-gray-900 text-sm
+            rounded-r-lg
+            border-l-gray-100
+            dark:border-l-gray-700
+            border-l-2
+            focus:ring-red-500 focus:border-red-500
+            block
+            p-2.5
+            dark:bg-gray-700
+            dark:border-gray-600
+            dark:placeholder-gray-400
+            dark:text-white
+            dark:focus:ring-blue-500
+            dark:focus:border-blue-500
+          "
         >
           <option selected>Тип</option>
           <option>5-20</option>
@@ -34,12 +70,26 @@
         <input
           type="text"
           id="amount"
-          class="block w-full sm:text-xs rounded-lg border-none focus:border focus:border-red-500 focus:ring-red-500"
+          class="
+            block
+            w-full
+            sm:text-xs
+            rounded-lg
+            border-none
+            focus:border focus:border-red-500 focus:ring-red-500
+          "
         />
         <select
           name=""
           id=""
-          class="w-full h-9 rounded-lg border-none text-end focus:border-red-500 focus:ring-red-500"
+          class="
+            w-full
+            h-9
+            rounded-lg
+            border-none
+            text-end
+            focus:border-red-500 focus:ring-red-500
+          "
         >
           <option>+</option>
           <option>-</option>
@@ -47,7 +97,15 @@
         <input
           type="text"
           id="amount"
-          class="block p-2 w-full sm:text-xs rounded-lg border-none focus:ring-red-500"
+          class="
+            block
+            p-2
+            w-full
+            sm:text-xs
+            rounded-lg
+            border-none
+            focus:ring-red-500
+          "
         />
       </div>
       <div class="flex justify-end z-0 mb-6 w-full group">
@@ -67,7 +125,15 @@
           <div p-3>
             <div class="relative">
               <div
-                class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+                class="
+                  flex
+                  absolute
+                  inset-y-0
+                  left-0
+                  items-center
+                  pl-3
+                  pointer-events-none
+                "
               >
                 Привет
               </div>
@@ -85,7 +151,15 @@
           <input
             type="text"
             id="price"
-            class="p-2 w-full h-9 sm:text-xs rounded-lg border-none focus:border focus:border-red-500 focus:ring-red-500"
+            class="
+              p-2
+              w-full
+              h-9
+              sm:text-xs
+              rounded-lg
+              border-none
+              focus:border focus:border-red-500 focus:ring-red-500
+            "
           />
         </div>
         <div class="flex w-full justify-between items-center space-x-3">
@@ -97,7 +171,15 @@
           <input
             type="text"
             id="price-logistics"
-            class="p-2 full h-9 sm:text-xs rounded-lg border-none focus:ring-red-500 focus:border-red-500"
+            class="
+              p-2
+              full
+              h-9
+              sm:text-xs
+              rounded-lg
+              border-none
+              focus:ring-red-500 focus:border-red-500
+            "
           />
         </div>
       </div>
@@ -106,7 +188,16 @@
           name="type-cash"
           id="type-cash-1"
           type="radio"
-          class="w-4 h-4 mr-2 text-red-500 bg-gray-100 border-gray-300 focus:ring-red-500 focus:border-red-500 focuc:ring-2"
+          class="
+            w-4
+            h-4
+            mr-2
+            text-red-500
+            bg-gray-100
+            border-gray-300
+            focus:ring-red-500 focus:border-red-500
+            focuc:ring-2
+          "
         />
         <label for="type-cash-1" class="mr-3 text-sm font-medium text-gray-900"
           >Нал</label
@@ -116,7 +207,15 @@
           checked
           id="type-cash-2"
           type="radio"
-          class="w-4 h-4 mr-2 text-red-500 bg-gray-100 border-gray-300 focus:ring-red-500 focus:border-red-500 focus:ring-2"
+          class="
+            w-4
+            h-4
+            mr-2
+            text-red-500
+            bg-gray-100
+            border-gray-300
+            focus:ring-red-500 focus:border-red-500 focus:ring-2
+          "
         />
         <label for="type-cash-2" class="mr-3 text-sm font-medium text-gray-900"
           >Безнал</label
@@ -135,41 +234,49 @@
 </template>
 
 <script setup>
-import NumOfOrder from "../components/NumOfOrder.vue";
-import VueMultiselect from "vue-multiselect";
-import { ref } from "vue";
+  import NumOfOrder from "../components/NumOfOrder.vue";
+  import VueMultiselect from "vue-multiselect";
+  import { ref } from "vue";
 
-const customselected = ref(null);
-const customoptions = ref([
-  { name: "Зия", car: "Зил" },
-  { name: "Сервер", car: "Зил" },
-  { name: "Решат", car: "Зил" },
-]);
+  const customselected = ref(null);
+  const customoptions = ref([
+    { name: "Зия", car: "Зил" },
+    { name: "Сервер", car: "Зил" },
+    { name: "Решат", car: "Зил" },
+  ]);
 
-// export default {
-//   props: {
-//     drivers: {
-//       type: Array,
-//       default: () => [],
-//     },
-//   },
-//   components: {
-//     Multiselect,
-//   },
-//   data() {
-//     return {
-//       drivers_name: "",
-//     };
-//   },
-//   methods: {
-//     onSearchDrivers_name() {
-//       console.log("onSearchDrivers_name");
-//     },
-//     onSlecetedDrivers() {
-//       console.log("onSlecetedDrivers");
-//     },
-//   },
-// };
+  // export default {
+  //   props: {
+  //     drivers: {
+  //       type: Array,
+  //       default: () => [],
+  //     },
+  //   },
+  //   components: {
+  //     Multiselect,
+  //   },
+  //   data() {
+  //     return {
+  //       drivers_name: "",
+  //     };
+  //   },
+  //   methods: {
+  //     onSearchDrivers_name() {
+  //       console.log("onSearchDrivers_name");
+  //     },
+  //     onSlecetedDrivers() {
+  //       console.log("onSlecetedDrivers");
+  //     },
+  //   },
+  // };
 </script>
 
 <style src="vue-multiselect/dist/vue-multiselect.css"></style>
+<style>
+  .multiselect__tag {
+    background: red !important;
+  }
+  .multiselect {
+    border-radius: 8px !important;
+  }
+</style>

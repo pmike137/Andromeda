@@ -12,13 +12,14 @@
 </template>
 
 <script setup>
-import TabsWrapper from "../components/TabsWrapper.vue";
-import Tab from "../components/Tab.vue";
-import FormWood from "../components/FormWood.vue";
-import FormInert from "../components/FormInert.vue";
-import FormUnit from "../components/FormUnit.vue";
-import FormOther from "../components/FormOther.vue";
-import Stone from "../components/icons/IconStone.vue";
-import Wood from "../components/icons/IconWood.vue";
-import Unit from "../components/icons/IconUnit.vue";
+  import TabsWrapper from "../components/TabsWrapper.vue";
+  import Tab from "../components/Tab.vue";
+  import FormWood from "../components/FormWood.vue";
+  import FormInert from "../components/FormInert.vue";
+  import FormUnit from "../components/FormUnit.vue";
+  import FormOther from "../components/FormOther.vue";
+  import Stone from "../components/icons/IconStone.vue";
+  import Wood from "../components/icons/IconWood.vue";
+  import Unit from "../components/icons/IconUnit.vue";
+  import Other from "../components/icons/IconOther.vue";
 </script>
