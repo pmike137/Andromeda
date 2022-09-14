@@ -1,7 +1,7 @@
 <template>
   <NumOfOrder />
   <div class="flex justify-center items-center">
-    <form class="w-3/4">
+    <form class="w-full px-1 sm:w-3/4">
       <div class="flex justify-between z-0 mb-6 w-full group">
         <select
           id="name-of-position"
@@ -25,21 +25,21 @@
           <option>40-70</option>
         </select>
       </div>
-      <div class="flex justify-between z-0 mb-6 w-full group">
+      <div class="flex justify-between space-x-3 mb-6 w-full group">
         <label
           for="amount"
-          class="flex justify-center items-center w-24 sm:text-xs text-center"
-          >Кол-во</label
+          class="flex justify-center items-center w-full sm:text-xs text-center"
+          >Кол-во (тонн)</label
         >
         <input
           type="text"
           id="amount"
-          class="block p-2 w-1/4 sm:text-xs rounded-lg border-none focus:border focus:border-red-500 focus:ring-red-500"
+          class="block w-full sm:text-xs rounded-lg border-none focus:border focus:border-red-500 focus:ring-red-500"
         />
         <select
           name=""
           id=""
-          class="w-24 h-9 rounded-lg border-none text-end focus:border-red-500 focus:ring-red-500"
+          class="w-full h-9 rounded-lg border-none text-end focus:border-red-500 focus:ring-red-500"
         >
           <option>+</option>
           <option>-</option>
@@ -47,7 +47,7 @@
         <input
           type="text"
           id="amount"
-          class="block p-2 w-1/4 sm:text-xs rounded-lg border-none focus:ring-red-500"
+          class="block p-2 w-full sm:text-xs rounded-lg border-none focus:ring-red-500"
         />
       </div>
       <div class="flex justify-end z-0 mb-6 w-full group">
@@ -75,27 +75,31 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-between z-0 mb-6 w-full group">
-        <label
-          for="price-unit"
-          class="flex justify-center items-center w-24 sm:text-xs text-center"
-          >Цена за ед. (номинал)</label
-        >
-        <input
-          type="text"
-          id="price"
-          class="block p-2 w-1/4 h-9 sm:text-xs rounded-lg border-none focus:border focus:border-red-500 focus:ring-red-500"
-        />
-        <label
-          for="price-logistics"
-          class="flex justify-center items-center w-24 sm:text-xs text-center"
-          >Цена за ед. (факт)</label
-        >
-        <input
-          type="text"
-          id="price-logistics"
-          class="block p-2 w-1/4 h-9 sm:text-xs rounded-lg border-none focus:ring-red-500 focus:border-red-500"
-        />
+      <div class="flex flex-col sm:flex-row justify-between mb-6 w-full group">
+        <div class="flex w-full justify-between items-center space-x-3">
+          <label
+            for="price-unit"
+            class="flex justify-center items-center w-full sm:text-xs text-left"
+            >Цена за ед. (номинал)</label
+          >
+          <input
+            type="text"
+            id="price"
+            class="p-2 w-full h-9 sm:text-xs rounded-lg border-none focus:border focus:border-red-500 focus:ring-red-500"
+          />
+        </div>
+        <div class="flex w-full justify-between items-center space-x-3">
+          <label
+            for="price-logistics"
+            class="flex justify-center items-center w-full sm:text-xs text-left"
+            >Цена за ед. (факт)</label
+          >
+          <input
+            type="text"
+            id="price-logistics"
+            class="p-2 full h-9 sm:text-xs rounded-lg border-none focus:ring-red-500 focus:border-red-500"
+          />
+        </div>
       </div>
       <div class="flex justify-end z-0 mb-6 w-full group">
         <input

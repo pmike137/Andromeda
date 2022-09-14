@@ -1,5 +1,5 @@
 <template>
-  <div class="ml-4 cursor-pointer relative">
+  <div class="cursor-pointer relative sm:mx-2">
     <router-link to="/login" class="absolute w-full h-full"></router-link>
     <svg width="2em" height="2em" viewBox="0 0 24 24">
       <path

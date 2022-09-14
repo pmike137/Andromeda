@@ -8,6 +8,7 @@ import PriceEditView from "../views/PriceEditView.vue";
 import PackView from "../views/PackView.vue";
 import DBView from "../views/DBView.vue";
 import FinanceView from "../views/FinanceView.vue";
+import PriceToPDF from "../views/PriceToPDF.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -59,6 +60,13 @@ const router = createRouter({
       path: "/finance",
       name: "finance",
       component: FinanceView,
+    },
+    {
+      path: "/price",
+      name: "price",
+      component: PriceToPDF,
+      meta: {
+      isHeaderHidden: true}
     },
     // {
     //   path: "/about",

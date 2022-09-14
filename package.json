@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "flowbite": "^1.5.2",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
     "mongoose": "^6.5.3",
     "vue": "^3.2.37",
     "vue-multiselect": "^3.0.0-alpha.2",

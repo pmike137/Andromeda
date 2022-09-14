@@ -1,9 +1,11 @@
 <template>
-  <div class="bg-[url('image/background_base.jpg')] bg-cover">
+  <div id="app" class="bg-[url('image/background_base.jpg')] bg-cover">
     <TheHeader v-if="isHeaderHidden" />
 
     <main class="flex min-h-screen w-full">
-      <div class="container pt-28 pb-10"><RouterView /></div>
+      <div :class="{ 'pt-28 pb-10': isHeaderHidden }" class="container">
+        <RouterView />
+      </div>
     </main>
     <TheFooter />
   </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="tabs">
     <ul
-      class="flex flex-wrap justify-around text-sm font-medium text-center mb-5 border-b-2 text-gray-500 dark:text-gray-400"
+      class="flex justify-around text-sm font-medium text-center mb-5 px-3 border-b-2 text-gray-500 dark:text-gray-400"
     >
       <li
         v-for="item in headerItems"

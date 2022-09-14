@@ -1,5 +1,5 @@
 <template>
-  <div class="mr-4">
+  <div class="hidden sm:block sm:mx-2">
     <svg width="2em" height="2em" viewBox="0 0 36 36">
       <path
         fill="currentColor"

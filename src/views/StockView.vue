@@ -4,8 +4,8 @@
       <TabsWrapper>
         <Tab title="Инерт" :icon="Stone"> <StockInert /></Tab>
         <Tab title="Лес" :icon="Wood"><StockWood /></Tab>
-        <Tab title="Единицы" :icon="Unit"> </Tab>
-        <Tab title="Другое" :icon="Other"></Tab>
+        <Tab title="Единицы" :icon="Unit"><StockUnit /> </Tab>
+        <Tab title="Другое" :icon="Other"><StockOther /></Tab>
       </TabsWrapper>
     </div>
   </div>
@@ -20,4 +20,6 @@ import Unit from "../components/icons/IconUnit.vue";
 import Other from "../components/icons/IconOther.vue";
 import StockInert from "../components/StockInert.vue";
 import StockWood from "../components/StockWood.vue";
+import StockUnit from "../components/StockUnit.vue";
+import StockOther from "../components/StockOther.vue";
 </script>

@@ -1,7 +1,7 @@
 <template>
   <NumOfOrder />
   <div class="flex justify-center items-center">
-    <form class="w-3/4">
+    <form class="w-full px-1 sm:w-3/4">
       <div class="flex justify-end z-0 mb-6 w-full group">
         <textarea
           rows="3"

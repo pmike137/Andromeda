@@ -1,6 +1,6 @@
 <template>
-  <div class="flex justify-center">
-    <div class="w-[60%] bg-slate-300 p-5 rounded-lg">
+  <div class="flex justify-center px-3">
+    <div class="w-full sm:w-[70%] bg-slate-300 p-5 rounded-lg">
       <TabsWrapper>
         <Tab title="Инерт" :icon="Stone"><FormInert /></Tab>
         <Tab title="Лес" :icon="Wood"><FormWood /></Tab>
