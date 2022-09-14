@@ -1,30 +1,12 @@
 <template>
   <div
-    class="
-      h-[600px]
-      overflow-x-auto
-      relative
-      border-b-[1px] border-slate-600
-      mb-0
-    "
+    class="h-[600px] overflow-x-auto relative border-b-[1px] border-slate-600 mb-0"
   >
     <table
-      class="
-        w-full
-        text-sm text-center text-blue-100
-        dark:text-blue-100
-        relative
-      "
+      class="w-full text-sm text-center text-blue-100 dark:text-blue-100 relative"
     >
       <thead
-        class="
-          sticky
-          top-0
-          text-xs text-white
-          uppercase
-          bg-slate-600
-          dark:text-white
-        "
+        class="sticky top-0 text-xs text-white uppercase bg-slate-600 dark:text-white"
       >
         <tr>
           <th scope="col" class="w-2/5 py-3 px-6">Наименование</th>
@@ -46,13 +28,7 @@
           <td class="py-1 px-6 text-right">
             <input
               type="text"
-              class="
-                border-0
-                rounded-lg
-                bg-slate-200
-                ring-red-500
-                focus:border-red-500 focus:ring-red-500
-              "
+              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
             />
           </td>
 
@@ -60,13 +36,7 @@
             <input
               id="inputFirst"
               type="text"
-              class="
-                border-0
-                rounded-lg
-                bg-slate-200
-                ring-red-500
-                focus:border-red-500 focus:ring-red-500
-              "
+              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
             />
           </td>
           <td class="h-full w-full">
@@ -87,26 +57,14 @@
           <td class="py-2 px-6 text-right">
             <input
               type="text"
-              class="
-                border-0
-                rounded-lg
-                bg-slate-200
-                ring-red-500
-                focus:border-red-500 focus:ring-red-500
-              "
+              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
             />
           </td>
 
           <td class="py-2 px-6 text-right">
             <input
               type="text"
-              class="
-                border-0
-                rounded-lg
-                bg-slate-200
-                ring-red-500
-                focus:border-red-500 focus:ring-red-500
-              "
+              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
             />
           </td>
         </tr>
@@ -121,26 +79,14 @@
           <td class="py-2 px-6 text-right">
             <input
               type="text"
-              class="
-                border-0
-                rounded-lg
-                bg-slate-200
-                ring-red-500
-                focus:border-red-500 focus:ring-red-500
-              "
+              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
             />
           </td>
 
           <td class="py-2 px-6 text-right">
             <input
               type="text"
-              class="
-                border-0
-                rounded-lg
-                bg-slate-200
-                ring-red-500
-                focus:border-red-500 focus:ring-red-500
-              "
+              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
             />
           </td>
         </tr>
@@ -155,26 +101,14 @@
           <td class="py-2 px-6 text-right">
             <input
               type="text"
-              class="
-                border-0
-                rounded-lg
-                bg-slate-200
-                ring-red-500
-                focus:border-red-500 focus:ring-red-500
-              "
+              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
             />
           </td>
 
           <td class="py-2 px-6 text-right">
             <input
               type="text"
-              class="
-                border-0
-                rounded-lg
-                bg-slate-200
-                ring-red-500
-                focus:border-red-500 focus:ring-red-500
-              "
+              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
             />
           </td>
         </tr>
@@ -189,26 +123,14 @@
           <td class="py-2 px-6 text-right">
             <input
               type="text"
-              class="
-                border-0
-                rounded-lg
-                bg-slate-200
-                ring-red-500
-                focus:border-red-500 focus:ring-red-500
-              "
+              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
             />
           </td>
 
           <td class="py-2 px-6 text-right">
             <input
               type="text"
-              class="
-                border-0
-                rounded-lg
-                bg-slate-200
-                ring-red-500
-                focus:border-red-500 focus:ring-red-500
-              "
+              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
             />
           </td>
         </tr>
@@ -223,26 +145,14 @@
           <td class="py-2 px-6 text-right">
             <input
               type="text"
-              class="
-                border-0
-                rounded-lg
-                bg-slate-200
-                ring-red-500
-                focus:border-red-500 focus:ring-red-500
-              "
+              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
             />
           </td>
 
           <td class="py-2 px-6 text-right">
             <input
               type="text"
-              class="
-                border-0
-                rounded-lg
-                bg-slate-200
-                ring-red-500
-                focus:border-red-500 focus:ring-red-500
-              "
+              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
             />
           </td>
         </tr>
@@ -257,26 +167,14 @@
           <td class="py-2 px-6 text-right">
             <input
               type="text"
-              class="
-                border-0
-                rounded-lg
-                bg-slate-200
-                ring-red-500
-                focus:border-red-500 focus:ring-red-500
-              "
+              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
             />
           </td>
 
           <td class="py-2 px-6 text-right">
             <input
               type="text"
-              class="
-                border-0
-                rounded-lg
-                bg-slate-200
-                ring-red-500
-                focus:border-red-500 focus:ring-red-500
-              "
+              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
             />
           </td>
         </tr>
@@ -291,26 +189,14 @@
           <td class="py-2 px-6 text-right">
             <input
               type="text"
-              class="
-                border-0
-                rounded-lg
-                bg-slate-200
-                ring-red-500
-                focus:border-red-500 focus:ring-red-500
-              "
+              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
             />
           </td>
 
           <td class="py-2 px-6 text-right">
             <input
               type="text"
-              class="
-                border-0
-                rounded-lg
-                bg-slate-200
-                ring-red-500
-                focus:border-red-500 focus:ring-red-500
-              "
+              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
             />
           </td>
         </tr>
@@ -325,26 +211,14 @@
           <td class="py-2 px-6 text-right">
             <input
               type="text"
-              class="
-                border-0
-                rounded-lg
-                bg-slate-200
-                ring-red-500
-                focus:border-red-500 focus:ring-red-500
-              "
+              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
             />
           </td>
 
           <td class="py-2 px-6 text-right">
             <input
               type="text"
-              class="
-                border-0
-                rounded-lg
-                bg-slate-200
-                ring-red-500
-                focus:border-red-500 focus:ring-red-500
-              "
+              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
             />
           </td>
         </tr>
@@ -378,21 +252,21 @@
   </div>
 </template>
 <script setup>
-  import { ref } from "vue";
-  import AcceptModal from "../components/AcceptModal.vue";
+import { ref } from "vue";
+import AcceptModal from "../components/AcceptModal.vue";
 
-  const modalTriggers = ref({
-    buttonTrigger: false,
-  });
+const modalTriggers = ref({
+  buttonTrigger: false,
+});
 
-  const ToggleModal = (trigger) => {
-    modalTriggers.value[trigger] = !modalTriggers.value[trigger];
-  };
+const ToggleModal = (trigger) => {
+  modalTriggers.value[trigger] = !modalTriggers.value[trigger];
+};
 
-  function ButtonClick() {
-    var but = document.getElementById("inputFirst");
-    but.disabled = !but.disabled;
-  }
+function ButtonClick() {
+  var but = document.getElementById("inputFirst");
+  but.disabled = !but.disabled;
+}
 </script>
 
 <style scoped></style>

@@ -66,7 +66,8 @@ const router = createRouter({
       name: "price",
       component: PriceToPDF,
       meta: {
-      isHeaderHidden: true}
+        isHeaderHidden: true,
+      },
     },
     // {
     //   path: "/about",

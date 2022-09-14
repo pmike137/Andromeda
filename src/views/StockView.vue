@@ -12,14 +12,14 @@
 </template>
 
 <script setup>
-  import TabsWrapper from "../components/TabsWrapper.vue";
-  import Tab from "../components/Tab.vue";
-  import Stone from "../components/icons/IconStone.vue";
-  import Wood from "../components/icons/IconWood.vue";
-  import Unit from "../components/icons/IconUnit.vue";
-  import Other from "../components/icons/IconOther.vue";
-  import StockInert from "../components/StockInert.vue";
-  import StockWood from "../components/StockWood.vue";
-  import StockUnit from "../components/StockUnit.vue";
-  import StockOther from "../components/StockOther.vue";
+import TabsWrapper from "../components/TabsWrapper.vue";
+import Tab from "../components/Tab.vue";
+import Stone from "../components/icons/IconStone.vue";
+import Wood from "../components/icons/IconWood.vue";
+import Unit from "../components/icons/IconUnit.vue";
+import Other from "../components/icons/IconOther.vue";
+import StockInert from "../components/StockInert.vue";
+import StockWood from "../components/StockWood.vue";
+import StockUnit from "../components/StockUnit.vue";
+import StockOther from "../components/StockOther.vue";
 </script>

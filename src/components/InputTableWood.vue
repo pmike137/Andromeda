@@ -1,6 +1,6 @@
 <template>
   <div class="rounded-lg bg-white p-6">
-    <div class="grid md:grid-cols-4 md:gap-6">
+    <div class="grid grid-cols-2 sm:grid-cols-4 sm:gap-6">
       <div class="relative z-0 mb-6 w-full group">
         <input
           type="text"
@@ -62,7 +62,7 @@
         >
       </div>
     </div>
-    <div class="grid md:grid-cols-4 md:gap-6">
+    <div class="grid grid-cols-2 sm:grid-cols-4 sm:gap-6">
       <div class="relative z-0 mb-6 w-full group">
         <input
           type="text"
