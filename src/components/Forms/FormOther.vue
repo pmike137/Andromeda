@@ -9,10 +9,10 @@
           placeholder="Опишите характеристики покупки, товара либо сделки для прохождения модерации..."
         ></textarea>
       </div>
-      <div class="flex justify-between w-full space-x-1">
+      <div class="flex justify-between w-full space-x-3">
         <label
           for="amount"
-          class="flex justify-end items-center sm:text-xs text-center"
+          class="w-[40%] flex justify-end items-center sm:text-xs text-center"
           >Кол-во</label
         >
         <input
@@ -22,10 +22,10 @@
         />
       </div>
 
-      <div class="flex justify-between w-full space-x-1">
+      <div class="flex justify-between w-full space-x-3">
         <label
           for="price-unit"
-          class="flex justify-end items-center sm:text-xs text-center"
+          class="w-[40%] flex justify-end items-center sm:text-xs text-center"
           >Цена за ед.</label
         >
         <input
@@ -34,10 +34,10 @@
           class="w-full h-9 sm:text-xs rounded-lg border-none focus:border focus:border-red-500 focus:ring-red-500"
         />
       </div>
-      <div class="flex justify-between w-full space-x-1">
+      <div class="flex justify-between w-full space-x-3">
         <label
           for="price-logistics"
-          class="flex justify-end items-center sm:text-xs text-center"
+          class="w-[40%] flex justify-end items-center sm:text-xs text-center"
           >Сто-ть</label
         >
         <input

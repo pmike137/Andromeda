@@ -23,4 +23,16 @@ const customoptions = ref([
   { name: "Решат", car: "Зил" },
 ]);
 </script>
-<style scoped></style>
+<style src="vue-multiselect/dist/vue-multiselect.css"></style>
+<style>
+.multiselect__tag {
+  background: #f05252 !important;
+}
+.multiselect__tags {
+  border-radius: 8px !important;
+  border: 0px !important;
+}
+.multiselect__placeholder {
+  color: black !important;
+}
+</style>
