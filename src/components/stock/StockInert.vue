@@ -169,6 +169,4 @@
     </table>
   </div>
 </template>
-<script setup>
-import NumOfOrder from "../components/NumOfOrder.vue";
-</script>
+<script setup></script>

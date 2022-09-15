@@ -2,10 +2,10 @@
   <div class="flex justify-center px-3">
     <div class="w-full sm:w-[70%] bg-slate-300 p-5 rounded-lg">
       <TabsWrapper>
-        <Tab title="Инерт" :icon="Stone"><FormInert /></Tab>
-        <Tab title="Лес" :icon="Wood"><FormWood /></Tab>
-        <Tab title="Единицы" :icon="Unit"> <FormUnit /></Tab>
-        <Tab title="Другое" :icon="Other"><FormOther /></Tab>
+        <Tab title="Инерт" :icon="IconStone"><FormInert /></Tab>
+        <Tab title="Лес" :icon="IconWood"><FormWood /></Tab>
+        <Tab title="Единицы" :icon="IconUnit"> <FormUnit /></Tab>
+        <Tab title="Другое" :icon="IconOther"><FormOther /></Tab>
       </TabsWrapper>
     </div>
   </div>
@@ -14,12 +14,6 @@
 <script setup>
 import TabsWrapper from "../components/TabsWrapper.vue";
 import Tab from "../components/Tab.vue";
-import FormWood from "../components/forms/FormWood.vue";
-import FormInert from "../components/forms/FormInert.vue";
-import FormUnit from "../components/forms/FormUnit.vue";
-import FormOther from "../components/forms/FormOther.vue";
-import Stone from "../components/icons/IconStone.vue";
-import Wood from "../components/icons/IconWood.vue";
-import Unit from "../components/icons/IconUnit.vue";
-import Other from "../components/icons/IconOther.vue";
+import { FormInert, FormUnit, FormWood, FormOther } from "../components";
+import { IconStone, IconWood, IconUnit, IconOther } from "../components";
 </script>

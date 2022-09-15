@@ -2,10 +2,10 @@
   <div class="flex justify-center">
     <div class="w-[60%] bg-slate-300 p-5 rounded-lg">
       <TabsWrapper>
-        <Tab title="Инерт" :icon="Stone"> <StockInert /></Tab>
-        <Tab title="Лес" :icon="Wood"><StockWood /></Tab>
-        <Tab title="Единицы" :icon="Unit"><StockUnit /> </Tab>
-        <Tab title="Другое" :icon="Other"><StockOther /></Tab>
+        <Tab title="Инерт" :icon="IconStone"> <StockInert /></Tab>
+        <Tab title="Лес" :icon="IconWood"><StockWood /></Tab>
+        <Tab title="Единицы" :icon="IconUnit"><StockUnit /> </Tab>
+        <Tab title="Другое" :icon="IconOther"><StockOther /></Tab>
       </TabsWrapper>
     </div>
   </div>
@@ -14,12 +14,6 @@
 <script setup>
 import TabsWrapper from "../components/TabsWrapper.vue";
 import Tab from "../components/Tab.vue";
-import Stone from "../components/icons/IconStone.vue";
-import Wood from "../components/icons/IconWood.vue";
-import Unit from "../components/icons/IconUnit.vue";
-import Other from "../components/icons/IconOther.vue";
-import StockInert from "../components/StockInert.vue";
-import StockWood from "../components/StockWood.vue";
-import StockUnit from "../components/StockUnit.vue";
-import StockOther from "../components/StockOther.vue";
+import { IconStone, IconWood, IconUnit, IconOther } from "../components";
+import { StockInert, StockWood, StockUnit, StockOther } from "../components";
 </script>

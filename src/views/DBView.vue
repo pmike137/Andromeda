@@ -5,7 +5,7 @@
         <TabsWrapper>
           <Tab title="Клиенты"><DBFormClient /></Tab>
           <Tab title="Перевозчики"><DBFormDriver /></Tab>
-          <Tab title="Поставщики"><DBFormDelivery /></Tab>
+          <Tab title="Поставщики"><DBFormSuppliers /></Tab>
         </TabsWrapper>
       </div>
     </div>
@@ -14,7 +14,5 @@
 <script setup>
 import TabsWrapper from "../components/TabsWrapper.vue";
 import Tab from "../components/Tab.vue";
-import DBFormClient from "../components/DBFormClient.vue";
-import DBFormDriver from "../components/DBFormDriver.vue";
-import DBFormDelivery from "../components/DBFormDelivery.vue";
+import { DBFormClient, DBFormSuppliers, DBFormDriver } from "../components";
 </script>

@@ -39,9 +39,6 @@
   </header>
 </template>
 <script setup>
-import IconManager from "../components/icons/IconManager.vue";
-import IconLogOut from "../components/icons/IconLogOut.vue";
-
-import IconSearch from "../components/icons/IconSearch.vue";
+import { IconManager, IconLogOut, IconSearch } from "../components";
 </script>
 <style scoped></style>
