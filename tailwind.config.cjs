@@ -7,7 +7,12 @@ module.exports = {
   ],
   theme: {
     container: { center: true },
-    extend: {},
+    extend: {
+      colors: {
+        mainColor: "#D42527",
+        mainHoverColor: "#F05252",
+      },
+    },
   },
   plugins: [require("flowbite/plugin")],
 };

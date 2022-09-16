@@ -1,44 +1,49 @@
 <template>
   <header class="fixed w-full top-0 left-0 z-50">
-    <nav class="bg-white dark:bg-gray-900">
+    <nav class="bg-white dark:bg-gray-900 py-4">
       <div
-        class="container flex sm:flex justify-between items-center py-3 pl-4"
+        class="container h-12 flex sm:flex justify-between items-center py-4 pl-4 space-x-4"
       >
-        <router-link class="flex items-center" to="/">
-          <img
-            src="image/logo.svg"
-            class="mr-3 h-8 md:h-12"
-            alt="Flowbite Logo"
-          />
+        <router-link class="w-[91px]" to="/">
+          <IconLogo />
         </router-link>
-        <div
-          class="w-full mx-3 pl-3 flex sm:mx-5 h-12 bg-slate-100 rounded-lg justify-between items-center space-x-3"
-        >
-          <IconSearch />
+        <div class="w-full">
           <input
-            class="w-full h-full bg-slate-100 cursor-text ring-0 border-none"
+            type="text"
+            class="bg-[#F8F8F8] border-opacity-20 border-black w-full ring-mainColor rounded-xl placeholder-black placeholder-opacity-20 hover:border-mainColor hover:ring-mainColor"
+            placeholder="Искать..."
           />
+        </div>
+        <div>
           <button
-            class="h-full w-[142px] bg-red-500 hover:bg-red-600 rounded-lg text-white"
+            class="flex justify-center items-center bg-[#F05252] hover:bg-mainHoverColor rounded-xl h-12 w-12"
           >
-            Поиск
+            <IconSearch />
           </button>
         </div>
-        <div class="flex items-center pr-4">
+        <div class="flex flex-col w-40">
+          <div>
+            <span class="text-sm font-bold text left text-black"
+              >Иванов И.И.</span
+            >
+          </div>
+          <div>
+            <span class="text-sm left text-mainColor underline"
+              >Мой профиль</span
+            >
+          </div>
+        </div>
+        <div>
           <IconManager />
-          <a
-            href="#"
-            class="sm:mx-2 text-sm font-medium text-red-600 dark:text-red-500 hover:underline hidden sm:block"
-          >
-            Иванов И.И.</a
-          >
-          <IconLogOut />
+        </div>
+        <div>
+          <router-link to="/login" class=""> <IconLogOut /> </router-link>
         </div>
       </div>
     </nav>
   </header>
 </template>
 <script setup>
-import { IconManager, IconLogOut, IconSearch } from "../components";
+import { IconManager, IconLogOut, IconSearch, IconLogo } from "../components";
 </script>
 <style scoped></style>

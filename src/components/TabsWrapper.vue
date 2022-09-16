@@ -8,7 +8,7 @@
         :key="item.title"
         :class="{ 'active-tab': item.title == selectedTitle }"
         @click="selectedTitle = item.title"
-        class="w-32 flex items-center justify-center py-3 px-4 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white mr-2 last:mr-0 mb-3 cursor-pointer select-none"
+        class="w-full max-w-[75px] sm:max-w-full flex items-center justify-center py-3 px-2 sm:px-4 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white mr-2 last:mr-0 mb-3 cursor-pointer select-none"
       >
         <span class="hidden sm:block">{{ item.title }} </span
         ><component v-if="item.icon" :is="item.icon" class="sm:ml-2" />
