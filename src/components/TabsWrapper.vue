@@ -1,17 +1,24 @@
 <template>
   <div class="tabs">
     <ul
-      class="flex justify-around text-sm font-medium text-center mb-5 px-3 border-b-2 text-gray-500 dark:text-gray-400"
+      class="flex justify-around text-sm font-medium text-center text-gray-500 dark:text-gray-400"
     >
       <li
+        @mouseover="onHover('coming')"
+        @mouseleave="onHover(null)"
         v-for="item in headerItems"
         :key="item.title"
         :class="{ 'active-tab': item.title == selectedTitle }"
         @click="selectedTitle = item.title"
-        class="w-full max-w-[75px] sm:max-w-full flex items-center justify-center py-3 px-2 sm:px-4 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white mr-2 last:mr-0 mb-3 cursor-pointer select-none"
+        class="w-full max-w-[75px] sm:max-w-full bg-white rounded-2xl flex items-center justify-center py-3 px-2 sm:px-4 hover:text-mainColor dark:hover:bg-gray-800 dark:hover:text-white mr-1 last:mr-0 mb-1 cursor-pointer select-none"
       >
-        <span class="hidden sm:block">{{ item.title }} </span
-        ><component v-if="item.icon" :is="item.icon" class="sm:ml-2" />
+        <component
+          v-if="item.icon"
+          :is="item.icon"
+          class=""
+          :isActive="activeIcon === 'coming' ? true : false"
+        />
+        <span class="hidden sm:block sm:ml-2">{{ item.title }} </span>
       </li>
     </ul>
     <slot />
@@ -22,6 +29,11 @@
 import { useSlots, ref, provide, shallowRef } from "vue";
 const slots = useSlots();
 const props = defineProps(["title", "icon"]);
+
+const activeIcon = ref(null);
+const onHover = (iconActive) => {
+  activeIcon.value = iconActive;
+};
 
 const tabTitles = ref(slots.default().map((tab) => tab.props.title));
 const tabIcons = shallowRef(slots.default().map((tab) => tab.props.icon));
@@ -40,6 +52,6 @@ provide("selectedTitle", selectedTitle);
 
 <style scoped>
 .active-tab {
-  @apply flex items-center justify-center py-3 px-4 text-white bg-red-500 rounded-lg;
+  @apply flex items-center justify-center py-3 px-4 text-mainColor;
 }
 </style>

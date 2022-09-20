@@ -3,7 +3,10 @@
     <TheHeader v-if="isHeaderHidden" />
 
     <main class="flex min-h-screen w-full">
-      <div :class="{ 'pt-52 pb-10': isHeaderHidden }" class="container">
+      <div
+        :class="{ 'pt-24 sm:pt-36 pb-10': isHeaderHidden }"
+        class="container"
+      >
         <RouterView />
       </div>
     </main>

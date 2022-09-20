@@ -1,10 +1,26 @@
 §
 <template>
-  <div class="flex justify-center">
-    <div class="w-full sm:w-[70%] bg-slate-300 p-5 rounded-lg">
+  <div class="flex flex-col justify-center px-14">
+    <div class="flex justify-between items-center w-full mb-8">
+      <div class="absolute top-[145px] left-[40px]">
+        <IconBack />
+      </div>
+      <div class="flex">
+        <IconOrderOrder class="mr-4" />
+        <div class="flex flex-col">
+          <span class="text-2xl font-bold">Сделка</span>
+
+          <span class="text-sm text-gray-400"
+            >Выберите клиента и сформируйте чек сделки
+          </span>
+        </div>
+      </div>
+      <NumOfOrder />
+    </div>
+    <div class="w-full rounded-2xl">
       <TabsWrapper>
-        <Tab title="Сделка" :icon="IconDeal"> <OrderSell /></Tab>
-        <Tab title="Другое" :icon="IconOther"></Tab>
+        <Tab title="Чек" :icon="IconOrderCheck"><FormOrderDeal /> </Tab>
+        <Tab title="Другое" :icon="IconComingOther"> </Tab>
       </TabsWrapper>
     </div>
   </div>
@@ -13,6 +29,12 @@
 <script setup>
 import TabsWrapper from "../components/TabsWrapper.vue";
 import Tab from "../components/Tab.vue";
-import OrderSell from "../components/OrderSell.vue";
-import { IconDeal, IconOther } from "../components";
+import {
+  FormOrderDeal,
+  IconOrderOrder,
+  IconComingOther,
+  IconOrderCheck,
+  NumOfOrder,
+  IconBack,
+} from "../components";
 </script>

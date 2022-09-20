@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-end w-full group">
+  <div class="flex w-full group">
     <input
       name="type-cash"
       id="type-cash-1"
