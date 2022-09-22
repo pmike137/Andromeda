@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         mainColor: "#D42527",
         mainHoverColor: "#F05252",
+        bcg: "#F5F5F5",
       },
     },
   },

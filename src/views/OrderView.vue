@@ -1,4 +1,3 @@
-§
 <template>
   <div class="flex flex-col justify-center px-14">
     <div class="flex justify-between items-center w-full mb-8">

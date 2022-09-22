@@ -101,6 +101,10 @@
       <div
         class="bg-white h-full w-full rounded-3xl flex flex-row space-x-10 px-10 py-7 sm:flex-col rounded-b-lg relative cursor-pointer group hover:shadow-lg hover:shadow-[#F05252]/[.12] default-transition"
       >
+        <router-link
+          to="/priceedit"
+          class="absolute w-full h-full left-0 top-0 z-10"
+        ></router-link>
         <div class="h-full flex justify-center items-center">
           <IconHomePrice />
         </div>
@@ -122,6 +126,10 @@
       <div
         class="bg-white w-full h-full rounded-3xl flex flex-row space-x-10 px-10 py-7 sm:flex-col rounded-b-lg relative cursor-pointer group hover:shadow-lg hover:shadow-[#F05252]/[.12] default-transition"
       >
+        <router-link
+          to="/pack"
+          class="absolute w-full h-full left-0 top-0 z-10"
+        ></router-link>
         <div class="h-full flex justify-center items-center">
           <IconHomePack />
         </div>
@@ -143,6 +151,11 @@
       <div
         class="bg-white w-full h-full rounded-3xl flex flex-row space-x-10 px-10 py-7 sm:flex-col rounded-b-lg relative cursor-pointer group hover:shadow-lg hover:shadow-[#F05252]/[.12] default-transition"
       >
+        <router-link
+          to="/databases"
+          class="absolute w-full h-full left-0 top-0 z-10"
+        ></router-link>
+
         <div class="h-full flex justify-center items-center">
           <IconHomeDB />
         </div>
@@ -162,42 +175,36 @@
         </div>
       </div>
       <div
-        class="bg-white w-full h-full rounded-3xl flex flex-row space-x-10 px-10 py-7 sm:flex-col rounded-b-lg relative cursor-pointer group hover:shadow-lg hover:shadow-[#F05252]/[.12] default-transition"
+        class="bg-white w-full h-full rounded-3xl flex flex-row space-x-10 px-10 py-7 sm:flex-col rounded-b-lg relative cursor-not-allowed opacity-60 group default-transition"
       >
+        <IconHomeInDev />
         <div class="h-full flex justify-center items-center">
           <IconHomeFinance />
         </div>
         <div class="flex flex-col justify-center items-start">
           <div class="">
-            <span
-              class="font-bold text-2xl text-black group-hover:text-mainColor"
-              >Финансы</span
-            >
+            <span class="font-bold text-2xl text-black">Финансы</span>
           </div>
           <div class="">
-            <span
-              class="text-sm text-black text-opacity-50 group-hover:text-mainColor"
+            <span class="text-sm text-black text-opacity-50"
               >Аналитика показателей
             </span>
           </div>
         </div>
       </div>
       <div
-        class="bg-white w-full h-full rounded-3xl flex flex-row space-x-10 px-10 py-7 sm:flex-col rounded-b-lg relative cursor-pointer group hover:shadow-lg hover:shadow-[#F05252]/[.12] default-transition"
+        class="bg-white w-full h-full rounded-3xl flex flex-row space-x-10 px-10 py-7 sm:flex-col rounded-b-lg relative cursor-not-allowed opacity-60 group default-transition"
       >
+        <IconHomeInDev />
         <div class="h-full flex justify-center items-center">
           <IconHome1C />
         </div>
         <div class="flex flex-col justify-center items-start">
           <div class="">
-            <span
-              class="font-bold text-2xl text-black group-hover:text-mainColor"
-              >1C</span
-            >
+            <span class="font-bold text-2xl text-black">1C</span>
           </div>
           <div class="">
-            <span
-              class="text-sm text-black text-opacity-50 group-hover:text-mainColor"
+            <span class="text-sm text-black text-opacity-50"
               >Импорт данных
             </span>
           </div>

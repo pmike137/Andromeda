@@ -1,4 +1,8 @@
 <template>
+  <router-link
+    to="/"
+    class="absolute w-full h-full left-0 top-0 z-10"
+  ></router-link>
   <svg
     width="50"
     height="50"

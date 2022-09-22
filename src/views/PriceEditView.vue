@@ -1,272 +1,81 @@
 <template>
-  <div
-    class="h-[600px] overflow-x-auto relative border-b-[1px] border-slate-600 mb-0"
-  >
-    <table
-      class="w-full text-sm text-center text-blue-100 dark:text-blue-100 relative"
-    >
-      <thead
-        class="sticky top-0 text-xs text-white uppercase bg-slate-600 dark:text-white"
-      >
-        <tr>
-          <th scope="col" class="w-2/5 py-3 px-6">Наименование</th>
-          <th scope="col" class="w-1/5 py-3 px-6">Категория</th>
-          <th scope="col" class="w-1/5 py-3 px-6">Цена (за тонну)</th>
-          <th scope="col" class="w-1/5 py-3 px-6">Цена (за мешок)</th>
-          <th scope="col" class="w-1/5 py-3 px-6"></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="bg-slate-300 text-black border-b border-gray-200">
-          <th
-            scope="row"
-            class="py-1 px-6 font-medium whitespace-nowrap dark:text-blue-100"
-          >
-            Щебень Белогорский
-          </th>
-          <td class="py-1 px-6 text-right">5-10</td>
-          <td class="py-1 px-6 text-right">
-            <input
-              type="text"
-              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
-            />
-          </td>
+  <div class="flex flex-col justify-center">
+    <div class="flex justify-between items-center w-full mb-8 px-14">
+      <div class="absolute top-[145px] left-[40px]">
+        <IconBack />
+      </div>
+      <div class="flex">
+        <IconPricePrice class="mr-4" />
+        <div class="flex flex-col">
+          <span class="text-2xl font-bold">Прейскурант</span>
 
-          <td class="px-6 text-right">
-            <input
-              id="inputFirst"
-              type="text"
-              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
-            />
-          </td>
-          <td class="h-full w-full">
-            <button
-              @click="ButtonClick"
-              class="h-5 w-full bg-red-100 hover:bg-red-200 cursor-pointer z-10"
-            ></button>
-          </td>
-        </tr>
-        <tr class="bg-slate-300 text-black border-b border-gray-200">
-          <th
-            scope="row"
-            class="py-2 px-6 font-medium whitespace-nowrap dark:text-blue-100"
-          >
-            Щебень Белогорский
-          </th>
-          <td class="py-2 px-6 text-right">10-20</td>
-          <td class="py-2 px-6 text-right">
-            <input
-              type="text"
-              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
-            />
-          </td>
-
-          <td class="py-2 px-6 text-right">
-            <input
-              type="text"
-              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
-            />
-          </td>
-        </tr>
-        <tr class="bg-slate-300 text-black border-b border-gray-200">
-          <th
-            scope="row"
-            class="py-2 px-6 font-medium whitespace-nowrap dark:text-blue-100"
-          >
-            Щебень Белогорский
-          </th>
-          <td class="py-2 px-6 text-right">20-40</td>
-          <td class="py-2 px-6 text-right">
-            <input
-              type="text"
-              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
-            />
-          </td>
-
-          <td class="py-2 px-6 text-right">
-            <input
-              type="text"
-              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
-            />
-          </td>
-        </tr>
-        <tr class="bg-slate-300 text-black border-b border-gray-200">
-          <th
-            scope="row"
-            class="py-2 px-6 font-medium whitespace-nowrap dark:text-blue-100"
-          >
-            Щебень Белогорский
-          </th>
-          <td class="py-2 px-6 text-right">20-40</td>
-          <td class="py-2 px-6 text-right">
-            <input
-              type="text"
-              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
-            />
-          </td>
-
-          <td class="py-2 px-6 text-right">
-            <input
-              type="text"
-              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
-            />
-          </td>
-        </tr>
-        <tr class="bg-slate-300 text-black border-b border-gray-200">
-          <th
-            scope="row"
-            class="py-2 px-6 font-medium whitespace-nowrap dark:text-blue-100"
-          >
-            Щебень Белогорский
-          </th>
-          <td class="py-2 px-6 text-right">20-40</td>
-          <td class="py-2 px-6 text-right">
-            <input
-              type="text"
-              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
-            />
-          </td>
-
-          <td class="py-2 px-6 text-right">
-            <input
-              type="text"
-              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
-            />
-          </td>
-        </tr>
-        <tr class="bg-slate-300 text-black border-b border-gray-200">
-          <th
-            scope="row"
-            class="py-2 px-6 font-medium whitespace-nowrap dark:text-blue-100"
-          >
-            Щебень Белогорский
-          </th>
-          <td class="py-2 px-6 text-right">20-40</td>
-          <td class="py-2 px-6 text-right">
-            <input
-              type="text"
-              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
-            />
-          </td>
-
-          <td class="py-2 px-6 text-right">
-            <input
-              type="text"
-              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
-            />
-          </td>
-        </tr>
-        <tr class="bg-slate-300 text-black border-b border-gray-200">
-          <th
-            scope="row"
-            class="py-2 px-6 font-medium whitespace-nowrap dark:text-blue-100"
-          >
-            Щебень Белогорский
-          </th>
-          <td class="py-2 px-6 text-right">20-40</td>
-          <td class="py-2 px-6 text-right">
-            <input
-              type="text"
-              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
-            />
-          </td>
-
-          <td class="py-2 px-6 text-right">
-            <input
-              type="text"
-              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
-            />
-          </td>
-        </tr>
-        <tr class="bg-slate-300 text-black border-b border-gray-200">
-          <th
-            scope="row"
-            class="py-2 px-6 font-medium whitespace-nowrap dark:text-blue-100"
-          >
-            Щебень Белогорский
-          </th>
-          <td class="py-2 px-6 text-right">20-40</td>
-          <td class="py-2 px-6 text-right">
-            <input
-              type="text"
-              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
-            />
-          </td>
-
-          <td class="py-2 px-6 text-right">
-            <input
-              type="text"
-              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
-            />
-          </td>
-        </tr>
-        <tr class="bg-slate-300 text-black border-b border-gray-200">
-          <th
-            scope="row"
-            class="py-2 px-6 font-medium whitespace-nowrap dark:text-blue-100"
-          >
-            Щебень Белогорский
-          </th>
-          <td class="py-2 px-6 text-right">20-40</td>
-          <td class="py-2 px-6 text-right">
-            <input
-              type="text"
-              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
-            />
-          </td>
-
-          <td class="py-2 px-6 text-right">
-            <input
-              type="text"
-              class="border-0 rounded-lg bg-slate-200 ring-red-500 focus:border-red-500 focus:ring-red-500"
-            />
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="flex justify-end items-center bg-slate-300 py-7">
-    <button
-      class="px-6 py-3 bg-red-300 hover:bg-red-500 border-0 rounded-lg mr-7"
-    >
-      Ссылка
-    </button>
-
-    <button
-      class="px-6 py-3 bg-red-300 hover:bg-red-500 border-0 rounded-lg mr-7"
-    >
-      Печать
-    </button>
-    <div class="openModal">
-      <button
-        @click="() => ToggleModal('buttonTrigger')"
-        class="mr-7 px-6 py-3 bg-red-300 hover:bg-red-500 border-0 rounded-lg"
-      >
-        Утвердить
-      </button>
+          <span class="text-sm text-gray-400"
+            >Актуализируйте информацию о ценах
+          </span>
+        </div>
+      </div>
     </div>
-    <AcceptModal
-      v-if="modalTriggers.buttonTrigger"
-      :ToggleModal="() => ToggleModal('buttonTrigger')"
-    />
+
+    <div
+      class="flex flex-col w-full bg-white space-y-5 mb-[5px] overflow-x-auto"
+    >
+      <table class="custom-table w-full text-sm">
+        <thead class="text-xs uppercase cursor-default">
+          <tr class="">
+            <th scope="col" class="py-4 text-mainColor">№</th>
+            <th scope="col" class="py-4 text-mainColor">Наименование</th>
+            <th scope="col" class="py-4 text-mainColor">Тип</th>
+            <th scope="col" class="py-4 text-mainColor">
+              Цена за тонну (опт.)
+            </th>
+            <th scope="col" class="py-4 text-mainColor">
+              Цена за тонну (роз.)
+            </th>
+            <th scope="col" class="py-4 text-mainColor">Цена за мешок</th>
+            <th scope="col" class="text-mainColor w-[50px]"><IconEdit /></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="text-center cursor-pointer hover:bg-mainHoverColor/25">
+            <th scope="rowgroup" class="py-4">1</th>
+            <td>Щебень Белогорский</td>
+            <td>5-20</td>
+            <td>1300</td>
+            <td>1250</td>
+            <td>-</td>
+            <td><IconEdit /></td>
+          </tr>
+          <tr class="text-center cursor-pointer hover:bg-mainHoverColor/25">
+            <th scope="rowgroup" class="py-4">2</th>
+            <td>Щебень Белогорский</td>
+            <td>20-40</td>
+            <td>1300</td>
+            <td>1250</td>
+            <td>85</td>
+            <td><IconEdit /></td>
+          </tr>
+          <tr class="text-center cursor-pointer hover:bg-mainHoverColor/25">
+            <th scope="rowgroup" class="py-4">3</th>
+            <td>Щебень Белогорский</td>
+            <td>40-70</td>
+            <td>1300</td>
+            <td>1250</td>
+            <td>-</td>
+            <td><IconEdit /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </template>
 <script setup>
-import { ref } from "vue";
-import AcceptModal from "../components/AcceptModal.vue";
-
-const modalTriggers = ref({
-  buttonTrigger: false,
-});
-
-const ToggleModal = (trigger) => {
-  modalTriggers.value[trigger] = !modalTriggers.value[trigger];
-};
-
-function ButtonClick() {
-  var but = document.getElementById("inputFirst");
-  but.disabled = !but.disabled;
-}
+import { IconBack, IconPricePrice, IconEdit } from "../components";
 </script>
 
-<style scoped></style>
+<style scoped>
+.custom-table th,
+.custom-table tr,
+.custom-table td {
+  border: 5px solid #f5f5f5;
+}
+</style>
