@@ -19,7 +19,15 @@
           <option>Грунт</option>
         </select>
       </div>
-      <div class="flex items-end"><IconBtnAdd class="w-10" /></div>
+      <div class="flex w-[40px] h-[40px]"><IconBtnAdd class="w-10" /></div>
+    </div>
+  </div>
+  <div
+    class="flex flex-col w-full bg-white px-[70px] py-7 space-y-5 rounded-2xl mt-10"
+  >
+    <div class="flex flex-col sm:flex-row justify-between space-x-7 items-end">
+      <div><span>Чек покупки</span></div>
+      <div><IconBtnAdd /></div>
     </div>
   </div>
 </template>

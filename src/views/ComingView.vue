@@ -1,10 +1,10 @@
 <template>
-  <div class="flex flex-col justify-center px-14">
-    <div class="flex justify-between items-center w-full mb-8">
+  <div class="flex flex-col justify-center sm:px-14">
+    <div class="flex justify-between items-center w-full mb-8 px-3 sm:px-0">
       <div class="absolute top-[145px] left-[40px]">
         <IconBack />
       </div>
-      <div class="flex">
+      <div class="flex justify-center items-center">
         <IconComingComing class="mr-4" />
         <div class="flex flex-col">
           <span class="text-2xl font-bold">Приход товара</span>

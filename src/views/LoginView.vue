@@ -72,22 +72,16 @@
           >Забыли пароль?</a
         >
       </div>
-      <!-- <button
-          type="submit"
-          class="w-full text-white bg-red-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 .5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        >
-          Войти
-        </button> -->
+
       <div class="h-12 flex justify-center items-center">
         <router-link
           to="/"
           type="submit"
-          class="w-full h-full text-white bg-mainColor hover:bg-mainHoverColor focus:ring-4 focus:outline-none font-medium rounded-lg text-sm .5 text-center"
+          class="w-full h-full flex items-center justify-center text-white bg-mainColor hover:bg-mainHoverColor focus:ring-4 focus:outline-none font-medium rounded-lg text-sm .5 text-center"
         >
           Войти
         </router-link>
       </div>
-      <!-- <router-link to="/" class="w-full h-full t-0 l-0"></router-link> -->
     </form>
   </div>
 </template>

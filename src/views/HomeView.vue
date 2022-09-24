@@ -1,12 +1,12 @@
 <template>
-  <div class="flex flex-col justify-center items-center">
+  <div class="flex flex-col justify-center items-center px-3">
     <div
-      class="flex flex-col w-full justify-center items-center space-x-3 space-y-[5px] mb-3 sm:px-4 sm:h-72 sm:flex-row"
+      class="flex flex-col w-full justify-center items-center sm:space-x-2 space-y-[5px] mb-3 sm:px-4 sm:h-72 sm:flex-row"
     >
       <div
         @mouseover="onHover('coming')"
         @mouseleave="onHover(null)"
-        class="flex flex-col justify-between py-7 h-52 sm:h-full bg-white w-full rounded-3xl relative px-7 cursor-pointer group"
+        class="flex flex-col justify-between py-7 h-52 sm:h-full bg-white w-full rounded-3xl relative px-7 cursor-pointer group hover:shadow-lg hover:shadow-[#F05252]/[.12]"
       >
         <router-link
           to="/coming"
@@ -36,7 +36,7 @@
       <div
         @mouseover="onHover('order')"
         @mouseleave="onHover(null)"
-        class="flex flex-col justify-between py-7 h-52 sm:h-full bg-white w-full rounded-3xl relative px-7 cursor-pointer group"
+        class="flex flex-col justify-between py-7 h-52 sm:h-full bg-white w-full rounded-3xl relative px-7 cursor-pointer group hover:shadow-lg hover:shadow-[#F05252]/[.12]"
       >
         <router-link
           to="/order"
@@ -66,7 +66,7 @@
       <div
         @mouseover="onHover('stock')"
         @mouseleave="onHover(null)"
-        class="flex flex-col justify-between py-7 h-52 sm:h-full bg-white w-full rounded-3xl relative px-7 cursor-pointer group"
+        class="flex flex-col justify-between py-7 h-52 sm:h-full bg-white w-full rounded-3xl relative px-7 cursor-pointer group hover:shadow-lg hover:shadow-[#F05252]/[.12]"
       >
         <router-link
           to="/stock"
@@ -96,19 +96,21 @@
     </div>
 
     <div
-      class="flex flex-col sm:flex-row justify-center items-center w-full sm:px-4 sm:h-72 space-x-3 space-y-[3px]"
+      class="flex flex-col sm:flex-row justify-center items-center w-full sm:space-x-2 xl:px-4 xl:h-72 space-y-[3px]"
     >
       <div
-        class="bg-white h-full w-full rounded-3xl flex flex-row space-x-10 px-10 py-7 sm:flex-col rounded-b-lg relative cursor-pointer group hover:shadow-lg hover:shadow-[#F05252]/[.12] default-transition"
+        class="bg-white h-full w-full rounded-3xl flex py-7 px-7 sm:px-0 sm:flex-col rounded-b-lg relative cursor-pointer group hover:shadow-lg hover:shadow-[#F05252]/[.12] default-transition"
       >
         <router-link
           to="/priceedit"
           class="absolute w-full h-full left-0 top-0 z-10"
         ></router-link>
-        <div class="h-full flex justify-center items-center">
+        <div
+          class="h-full w-[100px] sm:w-full flex justify-center items-center"
+        >
           <IconHomePrice />
         </div>
-        <div class="flex flex-col justify-center items-start">
+        <div class="flex flex-col justify-center items-start px-7">
           <div class="">
             <span
               class="font-bold text-2xl text-black group-hover:text-mainColor"
@@ -124,16 +126,18 @@
         </div>
       </div>
       <div
-        class="bg-white w-full h-full rounded-3xl flex flex-row space-x-10 px-10 py-7 sm:flex-col rounded-b-lg relative cursor-pointer group hover:shadow-lg hover:shadow-[#F05252]/[.12] default-transition"
+        class="bg-white w-full h-full rounded-3xl flex py-7 px-7 sm:px-0 sm:flex-col rounded-b-lg relative cursor-pointer group hover:shadow-lg hover:shadow-[#F05252]/[.12] default-transition"
       >
         <router-link
           to="/pack"
           class="absolute w-full h-full left-0 top-0 z-10"
         ></router-link>
-        <div class="h-full flex justify-center items-center">
+        <div
+          class="h-full w-[100px] sm:w-full flex justify-center items-center"
+        >
           <IconHomePack />
         </div>
-        <div class="flex flex-col justify-center items-start">
+        <div class="flex flex-col justify-center items-start px-7">
           <div class="">
             <span
               class="font-bold text-2xl text-black group-hover:text-mainColor"
@@ -149,17 +153,19 @@
         </div>
       </div>
       <div
-        class="bg-white w-full h-full rounded-3xl flex flex-row space-x-10 px-10 py-7 sm:flex-col rounded-b-lg relative cursor-pointer group hover:shadow-lg hover:shadow-[#F05252]/[.12] default-transition"
+        class="bg-white w-full h-full rounded-3xl flex py-7 px-7 sm:px-0 sm:flex-col rounded-b-lg relative cursor-pointer group hover:shadow-lg hover:shadow-[#F05252]/[.12] default-transition"
       >
         <router-link
           to="/databases"
           class="absolute w-full h-full left-0 top-0 z-10"
         ></router-link>
 
-        <div class="h-full flex justify-center items-center">
+        <div
+          class="h-full w-[100px] sm:w-full flex justify-center items-center"
+        >
           <IconHomeDB />
         </div>
-        <div class="flex flex-col justify-center items-start">
+        <div class="flex flex-col justify-center items-start px-7">
           <div class="">
             <span
               class="font-bold text-2xl text-black group-hover:text-mainColor"
@@ -175,13 +181,15 @@
         </div>
       </div>
       <div
-        class="bg-white w-full h-full rounded-3xl flex flex-row space-x-10 px-10 py-7 sm:flex-col rounded-b-lg relative cursor-not-allowed opacity-60 group default-transition"
+        class="bg-white w-full h-full rounded-3xl flex py-7 px-7 sm:px-0 sm:flex-col rounded-b-lg relative cursor-not-allowed opacity-60 group default-transition"
       >
-        <IconHomeInDev />
-        <div class="h-full flex justify-center items-center">
+        <IconHomeInDev class="absolute sm:left-4" />
+        <div
+          class="h-full w-[100px] sm:w-full flex justify-center items-center"
+        >
           <IconHomeFinance />
         </div>
-        <div class="flex flex-col justify-center items-start">
+        <div class="flex flex-col justify-center items-start px-7">
           <div class="">
             <span class="font-bold text-2xl text-black">Финансы</span>
           </div>
@@ -193,13 +201,15 @@
         </div>
       </div>
       <div
-        class="bg-white w-full h-full rounded-3xl flex flex-row space-x-10 px-10 py-7 sm:flex-col rounded-b-lg relative cursor-not-allowed opacity-60 group default-transition"
+        class="bg-white w-full h-full rounded-3xl flex py-7 px-7 sm:px-0 sm:flex-col rounded-b-lg relative cursor-not-allowed opacity-60 group default-transition"
       >
-        <IconHomeInDev />
-        <div class="h-full flex justify-center items-center">
+        <IconHomeInDev class="absolute sm:left-4" />
+        <div
+          class="h-full w-[100px] sm:w-full flex justify-center items-center"
+        >
           <IconHome1C />
         </div>
-        <div class="flex flex-col justify-center items-start">
+        <div class="flex flex-col justify-center items-start px-7">
           <div class="">
             <span class="font-bold text-2xl text-black">1C</span>
           </div>
