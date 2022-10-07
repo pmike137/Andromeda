@@ -2,12 +2,12 @@
   <header class="fixed w-full top-0 left-0 z-50 border-b-2 border-bcg">
     <nav class="bg-white dark:bg-gray-900 py-4 px-4">
       <div
-        class="container h-12 flex sm:flex justify-between items-center py-4 pl-4 space-x-4"
+        class="container h-12 flex lg:flex justify-between items-center py-4 pl-4 space-x-4"
       >
-        <router-link class="hidden sm:block sm:w-[91px]" to="/">
+        <router-link class="hidden lg:block lg:w-[91px]" to="/">
           <IconLogo />
         </router-link>
-        <div class="hidden sm:block w-full">
+        <div class="hidden lg:block w-full">
           <input
             type="text"
             class="bg-[#F8F8F8] border-opacity-20 border-black w-full ring-mainColor rounded-xl placeholder-black placeholder-opacity-20 hover:border-mainColor hover:ring-mainColor"
@@ -21,10 +21,10 @@
             <IconSearch />
           </button>
         </div>
-        <router-link class="w-[91px] sm:hidden sm:w-[91px]" to="/">
+        <router-link class="w-[91px] lg:hidden lg:w-[91px]" to="/">
           <IconLogo />
         </router-link>
-        <div class="hidden sm:flex flex-col w-40">
+        <div class="hidden lg:flex flex-col w-40">
           <div>
             <span class="text-sm font-bold text left text-black"
               >Калабин Г.А.</span
@@ -39,7 +39,7 @@
         <div>
           <IconManager />
         </div>
-        <div class="hidden sm:block">
+        <div class="hidden lg:block">
           <router-link to="/login" class=""> <IconLogOut /> </router-link>
         </div>
       </div>

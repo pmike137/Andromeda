@@ -4,7 +4,7 @@
 
     <main class="flex min-h-screen w-full">
       <div
-        :class="{ 'pt-24 sm:pt-36 pb-10': isHeaderHidden }"
+        :class="{ 'pt-24 lg:pt-36 pb-10': isHeaderHidden }"
         class="container"
       >
         <RouterView />
