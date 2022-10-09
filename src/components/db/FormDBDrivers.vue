@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col w-full bg-white px-[70px] py-7 space-y-5 rounded-t-2xl mb-[5px]"
+    class="flex flex-col w-full bg-white px-3 lg:px-[70px] py-7 space-y-5 rounded-t-2xl mb-[5px]"
   >
     <div class="w-full">
       <label for="name-of-product" class="block mb-2 font-bold"

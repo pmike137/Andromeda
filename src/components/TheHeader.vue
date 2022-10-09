@@ -2,7 +2,7 @@
   <header class="fixed w-full top-0 left-0 z-50 border-b-2 border-bcg">
     <nav class="bg-white dark:bg-gray-900 py-4 px-4">
       <div
-        class="container h-12 flex lg:flex justify-between items-center py-4 pl-4 space-x-4"
+        class="container h-12 flex lg:flex justify-between items-center py-4 lg:space-x-4"
       >
         <router-link class="hidden lg:block lg:w-[91px]" to="/">
           <IconLogo />

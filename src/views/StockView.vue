@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col justify-center">
-    <div class="flex justify-between items-center w-full mb-8 px-14">
+  <div class="flex flex-col justify-center lg:px-14">
+    <div class="flex justify-between items-center w-full mb-8 px-3 lg:px-0">
       <div class="absolute top-[145px] left-[40px]">
         <IconBack />
       </div>
@@ -16,7 +16,7 @@
       </div>
     </div>
     <div
-      class="flex flex-col w-full bg-white px-[70px] py-7 space-y-5 rounded-t-2xl mb-[5px]"
+      class="flex flex-col w-full bg-white px-3 lg:px-[70px] py-7 space-y-5 rounded-t-2xl mb-[5px]"
     >
       <div class="w-full">
         <label for="name-of-product" class="block mb-2 font-bold"
@@ -35,7 +35,7 @@
       <span class="font-bold">Список товаров (32)</span>
     </div>
     <div
-      class="flex flex-col w-full bg-white py-7 space-y-5 mb-[5px] overflow-x-auto"
+      class="flex flex-col w-full bg-white py-7 px-3 space-y-5 mb-[5px] overflow-x-auto"
     >
       <table class="w-full text-sm">
         <thead class="text-xs uppercase cursor-default">
@@ -44,7 +44,7 @@
             <th scope="col" class="w-2/5 py-4 text-mainColor">Наименование</th>
             <th scope="col" class="py-4 text-mainColor">Тип</th>
             <th scope="col" class="py-4 text-mainColor">Кол-во</th>
-            <th scope="col" class="py-4 text-mainColor">Себестоимость</th>
+            <th scope="col" class="py-4 text-mainColor">Себес-ть</th>
           </tr>
         </thead>
         <tbody>
@@ -63,7 +63,7 @@
             <td>400</td>
           </tr>
           <tr class="text-center cursor-pointer">
-            <th scope="rowgroup" class="py-4"></th>
+            <th scope="rowgroup" class="py-4">3</th>
             <td>Щебень Белогорский</td>
             <td>40-70</td>
             <td>300 тонн</td>

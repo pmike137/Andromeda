@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col w-full bg-white px-[70px] py-7 space-y-5 rounded-2xl"
+    class="flex flex-col w-full bg-white px-3 lg:px-[70px] py-7 space-y-5 rounded-2xl"
   >
     <div class="flex flex-col sm:flex-row justify-between space-x-7 items-end">
       <div class="w-full">
@@ -8,7 +8,7 @@
         <select
           id="drivers"
           type="text"
-          class="w-[50%] h-10 border border-[#E7E7E7] rounded-xl text-opacity-50 text-sm border-l-2 focus:ring-mainHoverColor focus:border-mainHoverColor"
+          class="w-full lg:w-[50%] h-10 border border-[#E7E7E7] rounded-xl text-opacity-50 text-sm border-l-2 focus:ring-mainHoverColor focus:border-mainHoverColor"
         ></select>
       </div>
     </div>
@@ -23,7 +23,7 @@
           oninput="this.value = this.value.replace(/[^0-9]/g,'')"
           id="drivers"
           type="text"
-          class="w-[50%] h-10 border border-[#E7E7E7] rounded-xl text-opacity-50 text-sm border-l-2 focus:ring-mainHoverColor focus:border-mainHoverColor"
+          class="w-full lg:w-[50%] h-10 border border-[#E7E7E7] rounded-xl text-opacity-50 text-sm border-l-2 focus:ring-mainHoverColor focus:border-mainHoverColor"
         />
       </div>
     </div>
@@ -36,7 +36,7 @@
           oninput="this.value = this.value.replace(/[^0-9]/g,'')"
           id="drivers"
           type="text"
-          class="w-[50%] h-10 border border-[#E7E7E7] rounded-xl text-opacity-50 text-sm border-l-2 focus:ring-mainHoverColor focus:border-mainHoverColor"
+          class="w-full lg:w-[50%] h-10 border border-[#E7E7E7] rounded-xl text-opacity-50 text-sm border-l-2 focus:ring-mainHoverColor focus:border-mainHoverColor"
         />
       </div>
     </div>

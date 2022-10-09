@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col w-full bg-white px-[70px] py-7 space-y-5 rounded-2xl"
+    class="flex flex-col w-full bg-white px-3 lg:px-[70px] py-7 space-y-5 rounded-2xl"
   >
     <div class="flex flex-col sm:flex-row justify-between space-x-7 items-end">
       <div class="w-full">
@@ -14,7 +14,7 @@
       </div>
     </div>
     <div
-      class="flex flex-col sm:flex-row justify-between space-x-7 items-start"
+      class="flex flex-col lg:flex-row justify-between lg:space-x-7 items-start"
     >
       <div class="w-full">
         <label for="value" class="font-bold text-lg">

@@ -1,16 +1,16 @@
 <template>
-  <div class="flex flex-col justify-center px-14">
-    <div class="flex justify-between items-center w-full mb-8">
+  <div class="flex flex-col justify-center lg:px-14">
+    <div class="flex justify-between items-center w-full mb-8 px-3 lg:px-0">
       <div class="absolute top-[145px] left-[40px]">
         <IconBack />
       </div>
       <div class="flex">
         <IconPackPack class="mr-4" />
         <div class="flex flex-col">
-          <span class="text-2xl font-bold">Остатки</span>
+          <span class="text-2xl font-bold">Фасовка</span>
 
           <span class="text-sm text-gray-400"
-            >Уточните наличие остатков товара на складах
+            >Конвертируйте насыпь в мешке
           </span>
         </div>
       </div>

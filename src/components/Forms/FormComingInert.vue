@@ -1,9 +1,9 @@
 <template>
   <div
-    class="flex flex-col w-full bg-white px-3 sm:px-[70px] py-7 space-y-5 rounded-2xl"
+    class="flex flex-col w-full bg-white px-3 lg:px-[70px] py-7 space-y-5 rounded-2xl"
   >
     <div
-      class="flex flex-col sm:flex-row justify-between space-x-7 space-y-2 items-end"
+      class="flex flex-col lg:flex-row justify-between space-x-7 space-y-2 items-end"
     >
       <div class="w-full">
         <label for="name-of-position" class="font-bold text-lg"> Товар </label>
@@ -34,7 +34,7 @@
       </div>
     </div>
     <div
-      class="flex flex-col sm:flex-row justify-between space-x-7 space-y-2 items-end"
+      class="flex flex-col lg:flex-row justify-between space-x-7 space-y-2 items-end"
     >
       <div class="w-full">
         <label for="name-of-position" class="font-bold text-lg">
@@ -59,7 +59,7 @@
         />
       </div>
     </div>
-    <div class="flex flex-col sm:flex-row justify-between space-x-7 items-end">
+    <div class="flex flex-col lg:flex-row justify-between space-x-7 items-end">
       <div class="w-full">
         <label for="drivers" class="font-bold text-lg block">
           Перевозчики
@@ -73,7 +73,7 @@
       </div>
     </div>
     <div
-      class="flex flex-col sm:flex-row justify-between space-x-7 space-y-2 items-end"
+      class="flex flex-col lg:flex-row justify-between space-x-7 space-y-2 items-end"
     >
       <div class="w-full">
         <label for="name-of-position" class="font-bold text-lg"> Цена </label>
@@ -95,7 +95,7 @@
         />
       </div>
     </div>
-    <div class="flex flex-col sm:flex-row justify-between space-x-7 items-end">
+    <div class="flex flex-col lg:flex-row justify-between space-x-7 items-end">
       <RadioCash />
     </div>
     <div class="flex justify-center items-center">
@@ -104,19 +104,19 @@
       >
     </div>
     <div
-      class="flex flex-col sm:flex-row justify-center space-x-2 sm:space-x-7 items-center"
+      class="flex flex-col lg:flex-row justify-center space-x-2 lg:space-x-7 items-center"
     >
       <button
-        class="w-full sm:w-[40%] h-[50px] rounded-xl text-center text-white bg-mainColor hover:bg-mainHoverColor"
+        class="w-full lg:w-[40%] h-[50px] rounded-xl text-center text-white bg-mainColor hover:bg-mainHoverColor"
       >
         Подтвердить
       </button>
     </div>
     <div
-      class="flex flex-col sm:flex-row justify-center space-x-2 sm:space-x-7 items-center"
+      class="flex flex-col lg:flex-row justify-center space-x-2 lg:space-x-7 items-center"
     >
       <button
-        class="w-full sm:w-[40%] h-[50px] rounded-xl text-center text-mainColor bg-white hover:bg-mainHoverColor"
+        class="w-full lg:w-[40%] h-[50px] rounded-xl text-center text-mainColor bg-white hover:bg-mainHoverColor"
       >
         Очистить поля
       </button>

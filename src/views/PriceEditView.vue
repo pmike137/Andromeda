@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col justify-center">
-    <div class="flex justify-between items-center w-full mb-8 px-14">
+  <div class="flex flex-col justify-center lg:px-14">
+    <div class="flex justify-between items-center w-full mb-8 px-3 lg:px-0">
       <div class="absolute top-[145px] left-[40px]">
         <IconBack />
       </div>

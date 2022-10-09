@@ -1,8 +1,8 @@
 <template>
   <div
-    class="flex flex-col w-full bg-white px-[70px] py-7 space-y-5 rounded-2xl"
+    class="flex flex-col w-full bg-white px-3 lg:px-[70px] py-7 space-y-5 rounded-2xl"
   >
-    <div class="flex flex-col sm:flex-row justify-between space-x-7 items-end">
+    <div class="flex justify-between space-x-7 items-end">
       <div class="w-full">
         <label for="name-of-position" class="font-bold text-lg"> Клиент </label>
         <select
@@ -25,8 +25,8 @@
   <div
     class="flex flex-col w-full bg-white px-[70px] py-7 space-y-5 rounded-2xl mt-10"
   >
-    <div class="flex flex-col sm:flex-row justify-between space-x-7 items-end">
-      <div><span>Чек покупки</span></div>
+    <div class="flex justify-between space-x-7 items-end">
+      <div><span class="font-bold text-lg">Чек покупки</span></div>
       <div><IconBtnAdd /></div>
     </div>
   </div>
